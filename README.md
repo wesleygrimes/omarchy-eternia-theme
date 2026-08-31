@@ -25,7 +25,7 @@ Apply the theme again at any time:
 omarchy theme set Eternia
 ```
 
-Cycle through the five included backgrounds:
+Cycle through the six included backgrounds:
 
 ```bash
 omarchy theme bg next
@@ -35,8 +35,8 @@ omarchy theme bg next
 
 - A complete semantic and ANSI palette in `colors.toml`
 - A cyan-violet-gold Hyprland and Omarchy shell border gradient
-- Five widescreen backgrounds spanning Castle Grayskull, Eternos, Point Dread,
-  and Snake Mountain
+- Six widescreen backgrounds spanning Castle Grayskull, Eternos, Point Dread,
+  Snake Mountain, and She-Ra's Crystal Castle on Etheria
 - A theme-switcher preview
 - A widely available Yaru Magenta icon-theme preference
 
