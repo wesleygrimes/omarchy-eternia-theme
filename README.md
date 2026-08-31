@@ -51,6 +51,7 @@ omarchy theme bg next
 
 - A complete semantic and ANSI palette in `colors.toml`
 - A cyan-violet-gold Hyprland and Omarchy shell border gradient
+- A custom Grayskull lock-screen panel with energized and error states
 - Seven widescreen backgrounds spanning Castle Grayskull, Eternos, Point Dread,
   Snake Mountain, She-Ra's Crystal Castle on Etheria, and Skeletor's throne room
 - A theme-switcher preview

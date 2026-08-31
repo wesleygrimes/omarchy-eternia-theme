@@ -1,0 +1,22 @@
+# Eternia lock screen — an ancient Grayskull control surface awakening.
+background       = "#0C0918"
+background-alpha = 0.84
+
+text        = "#FFF9FF"
+placeholder = "#9185AD"
+text-error  = "#FF5964"
+
+# Idle is quiet violet stone. Typing energizes the full Power Sword gradient;
+# a failed authentication flashes Horde red into sorcery magenta.
+border        = "rgba(9a6bff99)"
+border-active = "rgba(42e8f5ff) rgba(9a6bffff) rgba(ffd45cff) 55deg"
+border-error  = "rgba(ff5964ff) rgba(c878ffff) 55deg"
+border-alpha  = 1.0
+
+border-width        = 1
+border-active-width = "2 2 2 5"
+border-error-width  = "2 2 2 5"
+
+# Gold selection reads like the sword's guard against the cyan active edge.
+selection       = "#FFD45C"
+selection-alpha = 0.55
