@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+THEME_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+UNIT_NAME="eternia-crash-watcher.service"
+UNIT_PATH="$THEME_DIR/$UNIT_NAME"
+
+if [[ ! -f $UNIT_PATH ]]; then
+  echo "Missing $UNIT_PATH" >&2
+  exit 1
+fi
+
+systemctl --user link --force "$UNIT_PATH"
+systemctl --user daemon-reload
+systemctl --user enable --now "$UNIT_NAME"
+
+echo "Eternia crash sounds installed and running."
+echo "Preview one with: $THEME_DIR/bin/eternia-crash-watcher --test"
+

@@ -1,0 +1,13 @@
+[Unit]
+Description=Eternia crash sound easter egg
+After=graphical-session.target pipewire.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.config/omarchy/themes/eternia/bin/eternia-crash-watcher
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

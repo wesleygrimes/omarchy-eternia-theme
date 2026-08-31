@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+UNIT_NAME="eternia-crash-watcher.service"
+UNIT_LINK="$HOME/.config/systemd/user/$UNIT_NAME"
+
+systemctl --user disable --now "$UNIT_NAME" 2>/dev/null || true
+
+if [[ -L $UNIT_LINK ]]; then
+  unlink "$UNIT_LINK"
+fi
+
+systemctl --user daemon-reload
+echo "Eternia crash sounds removed. The downloaded clips remain in the theme."
+

@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+set -uo pipefail
+
+THEME_NAME="Eternia"
+THEME_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+SOUND_DIR="$THEME_DIR/sounds/crashes"
+COOLDOWN_SECONDS=15
+last_played=0
+
+play_crash_sound() {
+  local active_theme now clip
+  local -a clips=()
+
+  active_theme=$(omarchy theme current 2>/dev/null || true)
+  [[ ${active_theme,,} == ${THEME_NAME,,} ]] || return 0
+
+  now=$(date +%s)
+  (( now - last_played >= COOLDOWN_SECONDS )) || return 0
+
+  mapfile -d '' clips < <(find "$SOUND_DIR" -maxdepth 1 -type f \
+    \( -iname '*.mp3' -o -iname '*.ogg' -o -iname '*.wav' \) -print0)
+  ((${#clips[@]} > 0)) || return 0
+
+  clip=${clips[RANDOM % ${#clips[@]}]}
+  last_played=$now
+  mpv --no-video --really-quiet --volume=65 -- "$clip" </dev/null >/dev/null 2>&1 &
+}
+
+command -v journalctl >/dev/null || exit 1
+command -v mpv >/dev/null || exit 1
+
+if [[ ${1:-} == --test ]]; then
+  play_crash_sound
+  wait
+  exit 0
+fi
+
+# Starting at the end prevents an old crash from speaking after login. A single
+# crash can produce several coredump journal entries, so only accept completion.
+while IFS= read -r message; do
+  [[ $message == *'dumped core.'* ]] && play_crash_sound
+done < <(
+  journalctl --follow --lines=0 --no-pager --output=json \
+    _COMM=systemd-coredump 2>/dev/null |
+    jq --unbuffered -r '.MESSAGE // empty'
+)

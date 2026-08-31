@@ -33,6 +33,42 @@ omarchy theme install https://github.com/wesleygrimes/omarchy-eternia-theme.git
 Omarchy derives the theme name `eternia` from the repository name and applies
 it after installation.
 
+### Optional Skeletor crash sounds
+
+Eternia includes an optional easter egg that plays one of four short Skeletor
+clips when a native application dumps core. The watcher:
+
+- runs as a lightweight systemd user service
+- only plays sounds while Eternia is the active theme
+- chooses a random clip for each crash
+- limits playback to once every 15 seconds to tame crash loops
+- starts at the end of the journal, so old crashes do not trigger at login
+
+Omarchy intentionally does not execute code supplied by a Git-installed theme.
+Enable the easter egg explicitly after installing Eternia:
+
+```bash
+~/.config/omarchy/themes/eternia/install-easter-eggs
+```
+
+Confirm that the watcher is running:
+
+```bash
+systemctl --user status eternia-crash-watcher.service
+```
+
+Preview a random clip safely without crashing an application:
+
+```bash
+~/.config/omarchy/themes/eternia/bin/eternia-crash-watcher --test
+```
+
+Remove the service without deleting the theme or its clips:
+
+```bash
+~/.config/omarchy/themes/eternia/uninstall-easter-eggs
+```
+
 ## Use
 
 Apply the theme again at any time:
@@ -56,6 +92,7 @@ omarchy theme bg next
   Snake Mountain, She-Ra's Crystal Castle on Etheria, and Skeletor's throne room
 - A theme-switcher preview
 - A widely available Yaru Magenta icon-theme preference
+- An optional, rate-limited Skeletor crash-sound easter egg
 
 Omarchy generates safe, version-compatible configurations for terminals,
 Neovim, btop, Chromium, Helix, Obsidian, the Omarchy shell, Hyprland, and other
@@ -81,6 +118,11 @@ This is an unofficial, non-commercial fan project. *He-Man and the Masters of
 the Universe*, Eternia, Castle Grayskull, Snake Mountain, and related names and
 characters are trademarks and intellectual property of their respective
 owners. This project is not affiliated with or endorsed by Mattel.
+
+The optional Skeletor audio clips were downloaded from the
+[Voicy Skeletor soundboard](https://www.voicy.network/official-soundboards/series/skeletor).
+They remain the property of their respective rights holders and are not covered
+by the theme configuration reuse permission below.
 
 The theme configuration may be reused and adapted with attribution. No license
 or ownership claim is made over third-party names, characters, or settings.
