@@ -14,6 +14,16 @@ violet to gold.
 
 ![Eternia desktop with Skeletor's throne room](screenshots/desktop-skeletor.png)
 
+## Background gallery
+
+Click any image to open the full-resolution wallpaper.
+
+| Castle Grayskull | For Eternia | By the Power | Snake Mountain |
+|:---:|:---:|:---:|:---:|
+| [![Moonlit Castle Grayskull](backgrounds/1-castle-grayskull.png)](backgrounds/1-castle-grayskull.png) | [![He-Man and Battle Cat facing Grayskull](backgrounds/2-for-eternia.png)](backgrounds/2-for-eternia.png) | [![Transformation inside Castle Grayskull](backgrounds/3-by-the-power.png)](backgrounds/3-by-the-power.png) | [![Retro-futuristic Snake Mountain](backgrounds/4-snake-mountain.png)](backgrounds/4-snake-mountain.png) |
+| **Eternos & Point Dread** | **Crystal Castle** | **Skeletor's Throne** |  |
+| [![Royal Palace of Eternos and Point Dread](backgrounds/5-eternos-point-dread.png)](backgrounds/5-eternos-point-dread.png) | [![She-Ra and Swift Wind at Crystal Castle](backgrounds/6-crystal-castle.png)](backgrounds/6-crystal-castle.png) | [![Skeletor in the Snake Mountain throne room](backgrounds/7-skeletor-throne.png)](backgrounds/7-skeletor-throne.png) |  |
+
 ## Install
 
 ```bash
