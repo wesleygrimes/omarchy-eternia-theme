@@ -8,6 +8,12 @@ violet, hot coral, Battle Cat green, and heroic gold carry focus, syntax,
 status, and active-window states. The active border sweeps from cyan through
 violet to gold.
 
+## Preview
+
+![Eternia desktop with Eternos sunset](screenshots/desktop-eternos.png)
+
+![Eternia desktop with Skeletor's throne room](screenshots/desktop-skeletor.png)
+
 ## Install
 
 ```bash
@@ -25,7 +31,7 @@ Apply the theme again at any time:
 omarchy theme set Eternia
 ```
 
-Cycle through the six included backgrounds:
+Cycle through the seven included backgrounds:
 
 ```bash
 omarchy theme bg next
@@ -35,8 +41,8 @@ omarchy theme bg next
 
 - A complete semantic and ANSI palette in `colors.toml`
 - A cyan-violet-gold Hyprland and Omarchy shell border gradient
-- Six widescreen backgrounds spanning Castle Grayskull, Eternos, Point Dread,
-  Snake Mountain, and She-Ra's Crystal Castle on Etheria
+- Seven widescreen backgrounds spanning Castle Grayskull, Eternos, Point Dread,
+  Snake Mountain, She-Ra's Crystal Castle on Etheria, and Skeletor's throne room
 - A theme-switcher preview
 - A widely available Yaru Magenta icon-theme preference
 
