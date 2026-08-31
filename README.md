@@ -17,7 +17,7 @@ violet to gold.
 | Eternian Command Center | Handcrafted transparent btop instrumentation with distinct Power, Life, Threat, and Operations colors | `btop.theme` |
 | Grayskull lock screen | Translucent dark panel, quiet violet idle state, energized typing border, gold selection, and Horde-red failure state | `shell.lock.toml` |
 | Seven illustrated worlds | Castle Grayskull, Eternos, Point Dread, Snake Mountain, Crystal Castle, and Skeletor's throne room | `backgrounds/` |
-| Desktop integration | Yaru Magenta icon preference and an Eternos theme-switcher preview | `icons.theme`, `preview.png` |
+| Desktop integration | Yaru Magenta icon preference and a 16:9 theme-switcher preview | `icons.theme`, `preview.png` |
 | Optional villain commentary | Four rate-limited Skeletor clips when a native application dumps core | `install-easter-eggs`, `sounds/` |
 
 From the core palette, Omarchy safely generates matching configurations for
