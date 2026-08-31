@@ -1,0 +1,69 @@
+# Eternian Command Center — handcrafted btop instrumentation.
+# An empty main background inherits terminal transparency and lets the active
+# Eternia wallpaper tint the command deck without reducing text contrast.
+theme[main_bg]=""
+theme[main_fg]="#E8E4F4"
+
+# Instrument labels and interaction states.
+theme[title]="#FFD45C"
+theme[hi_fg]="#42E8F5"
+theme[selected_bg]="#45306B"
+theme[selected_fg]="#FFF9FF"
+theme[inactive_fg]="#695B86"
+theme[graph_text]="#F4EEFF"
+theme[meter_bg]="#352452"
+theme[proc_misc]="#9BF4FF"
+
+# Four command-deck systems: Power, Life, Threat, and Operations.
+theme[cpu_box]="#42E8F5"
+theme[mem_box]="#8BCB68"
+theme[net_box]="#FF5964"
+theme[proc_box]="#FFD45C"
+theme[div_line]="#695B86"
+
+# Thermal alert: Battle Cat green -> heroic gold -> Horde red.
+theme[temp_start]="#8BCB68"
+theme[temp_mid]="#FFD45C"
+theme[temp_end]="#FF5964"
+
+# Power Sword energy across CPU telemetry.
+theme[cpu_start]="#42E8F5"
+theme[cpu_mid]="#69A7FF"
+theme[cpu_end]="#C878FF"
+
+# Memory and storage distinguish free, cached, available, and used states.
+theme[free_start]="#C878FF"
+theme[free_mid]="#69A7FF"
+theme[free_end]="#42E8F5"
+theme[cached_start]="#69A7FF"
+theme[cached_mid]="#42DCEB"
+theme[cached_end]="#9BF4FF"
+theme[available_start]="#FFD45C"
+theme[available_mid]="#FF8A55"
+theme[available_end]="#FF5964"
+theme[used_start]="#8BCB68"
+theme[used_mid]="#42DCEB"
+theme[used_end]="#69A7FF"
+
+# Incoming danger and outgoing heroic energy remain instantly distinguishable.
+theme[download_start]="#FFD45C"
+theme[download_mid]="#FF8A55"
+theme[download_end]="#FF5964"
+theme[upload_start]="#8BCB68"
+theme[upload_mid]="#42DCEB"
+theme[upload_end]="#42E8F5"
+
+# Process activity travels from sword cyan through sorcery violet into gold.
+theme[process_start]="#42E8F5"
+theme[process_mid]="#C878FF"
+theme[process_end]="#FFD45C"
+
+# Grayskull stone-to-moonlight graph ramp.
+theme[gradient_color_0]="#0C0918"
+theme[gradient_color_1]="#1D1535"
+theme[gradient_color_2]="#352452"
+theme[gradient_color_3]="#45306B"
+theme[gradient_color_4]="#695B86"
+theme[gradient_color_5]="#9185AD"
+theme[gradient_color_6]="#E8E4F4"
+theme[gradient_color_7]="#FFF9FF"
