@@ -1,0 +1,39 @@
+mode = "dark"
+
+# Eternia — restored early-1980s animation-cel color.
+# Deep plum working surfaces let the electric Eternian colors blaze without
+# sacrificing long-session readability.
+accent = "#42E8F5"
+selection = "#45306B"
+muted = "#695B86"
+
+background = "#1D1535"
+dark_background = "#140E27"
+darker_background = "#0C0918"
+lighter_background = "#352452"
+
+foreground = "#E8E4F4"
+dark_foreground = "#9185AD"
+light_foreground = "#F4EEFF"
+bright_foreground = "#FFF9FF"
+
+red = "#FF5964"
+yellow = "#F6C84D"
+orange = "#FF8A55"
+green = "#8BCB68"
+cyan = "#42DCEB"
+blue = "#69A7FF"
+magenta = "#C878FF"
+brown = "#B97858"
+
+bright_red = "#FF7A82"
+bright_yellow = "#FFD45C"
+bright_green = "#A8E77F"
+bright_cyan = "#9BF4FF"
+bright_blue = "#91C3FF"
+bright_magenta = "#E29AFF"
+
+# A Power Sword-to-Grayskull-to-heroic-gold energy sweep around active windows,
+# shell cards, notifications, launcher, and lock screen.
+hyprland_active_border = "rgba(42e8f5ff) rgba(9a6bffff) rgba(ffd45cff) 55deg"
+hyprland_inactive_border = "rgba(695b8688)"
